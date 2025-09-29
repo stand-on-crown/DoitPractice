@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DoitPractice"
 include(":app")
- 
+include(":ch13_activity")
