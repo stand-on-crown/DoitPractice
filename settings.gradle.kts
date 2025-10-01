@@ -23,3 +23,5 @@ rootProject.name = "DoitPractice"
 include(":app")
 include(":ch13_activity")
 include(":ch14_receiver")
+include(":ch15_service")
+include(":ch15_outer")
