@@ -80,6 +80,5 @@ class MainActivity : AppCompatActivity() {
                 sendBroadcast(intent)
             }
         }
-
     }
 }
