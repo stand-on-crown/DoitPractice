@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.bumptech.glide.Glide
 import com.gi.ch14_receiver.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -37,17 +38,15 @@ class MainActivity : AppCompatActivity() {
                     when(getIntExtra(BatteryManager.EXTRA_PLUGGED, -1)){
                         BatteryManager.BATTERY_PLUGGED_USB -> {
                             binding.chargingResultView.text = "USB Plugged"
-                            binding.chargingImageView.setImageBitmap(
-                                BitmapFactory.decodeResource(
-                                resources, R.drawable.usb
-                            ))
+                            Glide.with(this@MainActivity)
+                                .load(R.drawable.usb)
+                                .into(binding.chargingImageView)
                         }
                         BatteryManager.BATTERY_PLUGGED_AC -> {
                             binding.chargingResultView.text = "AC Plugged"
-                            binding.chargingImageView.setImageBitmap(
-                                BitmapFactory.decodeResource(
-                                resources, R.drawable.ac
-                            ))
+                            Glide.with(this@MainActivity)
+                                .load(R.drawable.ac)
+                                .into(binding.chargingImageView)
                         }
                     }
                 }else -> {
