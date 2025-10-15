@@ -40,12 +40,14 @@ class MainActivity : AppCompatActivity() {
                             binding.chargingResultView.text = "USB Plugged"
                             Glide.with(this@MainActivity)
                                 .load(R.drawable.usb)
+                                .override(300, 300)
                                 .into(binding.chargingImageView)
                         }
                         BatteryManager.BATTERY_PLUGGED_AC -> {
                             binding.chargingResultView.text = "AC Plugged"
                             Glide.with(this@MainActivity)
                                 .load(R.drawable.ac)
+                                .override(300, 300)
                                 .into(binding.chargingImageView)
                         }
                     }
