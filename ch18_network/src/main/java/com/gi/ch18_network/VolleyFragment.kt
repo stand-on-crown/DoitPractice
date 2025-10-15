@@ -19,7 +19,6 @@ import com.android.volley.Response
 
 class VolleyFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
