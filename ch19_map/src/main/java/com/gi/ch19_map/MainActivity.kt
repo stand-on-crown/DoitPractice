@@ -24,7 +24,7 @@ import com.google.android.gms.tasks.OnSuccessListener
 class MainActivity : AppCompatActivity(), GoogleApiClient.ConnectionCallbacks,
     GoogleApiClient.OnConnectionFailedListener, OnMapReadyCallback {
 
-        //위치 정보를 가져오는 클라이언트
+    //위치 정보를 가져오는 클라이언트
     lateinit var providerClient: FusedLocationProviderClient
 
     //Google API와 연결을 관리하는 클라이언트
